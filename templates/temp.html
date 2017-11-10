@@ -6,8 +6,15 @@
     </title>
   </head>
   <body>
+    <h1>
+      {{dict["title"]}}
+    </h1>
+    <p>
+      {{dict["explanation"]}}
+    </p>
+    <img src="{{dict["url"]}}">
     {% for entry in dict %}
-    {{entry}}
+    <br>{{entry}}: {{dict[entry]}}
     {% endfor %}
   </body>
 </html>
